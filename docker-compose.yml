@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+  app:
+    container_name: item-app
+    image: adevaraz/item-app:v1
+    ports:
+      - 80:80
+    restart: always
+  db:
+    container_name: item-db
+    image: mongo:3
+    volumes:
+      - app-db:/data/db
+    restart: always
+volumes:
+  app-db:

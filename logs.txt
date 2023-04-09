@@ -1,0 +1,17 @@
+
+> docker-software-delivery@1.0.0 start /app
+> node ./bin/www
+
+NODE_ENV: production
+
+> docker-software-delivery@1.0.0 start /app
+> node ./bin/www
+
+NODE_ENV: production
+Connected to database
+
+> docker-software-delivery@1.0.0 start /app
+> node ./bin/www
+
+NODE_ENV: production
+Connected to database
