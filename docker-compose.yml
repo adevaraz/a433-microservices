@@ -3,9 +3,11 @@ version: '3.7'
 services:
   app:
     container_name: item-app
+    depends_on:
+      - item-db
     image: adevaraz/item-app:v1
     ports:
-      - 80:80
+      - 80:8080
     restart: always
   db:
     container_name: item-db
